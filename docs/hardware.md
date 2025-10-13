@@ -22,6 +22,8 @@ LoLin32lite + [LoraNode32-Lite shield](https://github.com/hallard/LoLin32-Lite-L
 - Crowdsupply: [TinyPICO](https://www.crowdsupply.com/unexpected-maker/tinypico)
 - TTGO: [T-Display](https://www.aliexpress.com/item/33048962331.html)
 - TTGO: [T-Wristband](https://www.aliexpress.com/item/4000527495064.html)
+- CYD 2432S024 - in developmnent
+- [CYD 2432S028](https://www.aliexpress.com/item/1005004502250619.html) - in development
 - Generic ESP32
 
 *) supports microSD/TF-card for local logging of paxcounter data. SD/TF-card must be FAT32 formatted.

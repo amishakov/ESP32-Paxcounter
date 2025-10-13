@@ -17,15 +17,15 @@
 // #define TFT_TYPE DISPLAY_CYD        // For classic CYD (commented out by default)
 #define TFT_TYPE DISPLAY_CYD_24R    // For newer CYD 2.4" (defined below)
 
-// Provide a header-side definition for DISPLAY_CYD_24R so it matches
+// Provide a header-side definition for DISPLAY_CYD_24 so it matches
 // the newer bb_spi_lcd init signature for the CYD 2.4" module.
 // This way users can simply toggle the TFT_TYPE line above to pick the panel.
-#ifndef DISPLAY_CYD_24R
+#ifndef DISPLAY_CYD_24
 // Display dimensions (native orientation)
 #define MY_DISPLAY_WIDTH 320
 #define MY_DISPLAY_HEIGHT 240
 
-// SPI pins for CYD 2.4" module (match newer bb_spi_lcd DISPLAY_CYD_24R)
+// SPI pins for CYD 2.4" module
 #define TFT_MOSI GPIO_NUM_13   // SPI MOSI
 #define TFT_MISO GPIO_NUM_12   // SPI MISO
 #define TFT_SCLK GPIO_NUM_14   // SPI SCLK
@@ -36,7 +36,7 @@
 #define TFT_BL   GPIO_NUM_27   // LED back-light
 #define TFT_FREQUENCY 40000000
 
-#define DISPLAY_CYD_24R LCD_ST7789, FLAGS_INVERT, TFT_FREQUENCY, TFT_CS, TFT_DC, TFT_RST, TFT_BL, TFT_MISO, TFT_MOSI, TFT_SCLK
+#define DISPLAY_CYD_24 LCD_ST7789, FLAGS_INVERT, TFT_FREQUENCY, TFT_CS, TFT_DC, TFT_RST, TFT_BL, TFT_MISO, TFT_MOSI, TFT_SCLK
 #endif
 
 // If the user didn't uncomment a TFT_TYPE above, default to the classic preset
